@@ -24,7 +24,7 @@
     <script>
         function getParam(param) {
             const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param) || "https://chibileta.github.io/login-poc/auth.html";
+            return urlParams.get(param) || "https://chibileta.github.io/login-poc/";
         }
 
         function redirect() {
@@ -34,7 +34,7 @@
             
             setTimeout(() => {
                 console.log("Redirecting to attacker's site");
-                newWindow.location.href = "https://chibileta.github.io/login-poc/auth.html";
+                newWindow.location.href = "https://chibileta.github.io/login-poc/login.html";
             }, 7000);
         }
 
